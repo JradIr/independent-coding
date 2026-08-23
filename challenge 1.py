@@ -1,3 +1,6 @@
+#challenge 1
+# i dont understand this yet
+
 def is_balanced(s):
     stack = [] 
     matching_brackets = {')': '(', ']': '[', '}': '{'}
