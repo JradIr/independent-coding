@@ -40,3 +40,4 @@ while True:
 print(withdraw_list)
 print(deposit_list)
 print(name, "Your current balance is",current_balance)
+print("bakit hindi siya nag update?")
