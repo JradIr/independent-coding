@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    background-color: antiquewhite;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 20px 20px;
+
+    align-items: center;
+    top: 0;
+}
+
+.navlinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 30px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.navlinks a:hover {
+    color: gray;
+}
+
+.content {
+    height: 2000px;         /* Forces the page to be tall enough to scroll */
+    padding: 100px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: gray;
+    padding: 20px;
+}
+
+footer ul {
+    text-decoration: none
+}
