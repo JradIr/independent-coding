@@ -1,5 +1,8 @@
-print(" ito nanaman ")
-print("kelangan pa ba i git init para may makita ")
+# Copy this into your editor!
 
-username = input("Enter your username: ")
-print(f"Hello, {username}! Welcome to the program.")
+def calculate_coffee_cost(number_of_coffees):
+    total = number_of_coffees * 3
+    return total
+    
+    pass # <-- Delete this word and write your code!
+print(calculate_coffee_cost(3))
