@@ -33,18 +33,24 @@ def is_adult(age):
     return age >= 18
 
 def get_entry_fee(age):
-    age = is_adult(age)
-    if age >= 18:
+    if is_adult(age):
         return 10
-    else:
-        return 0
+    return 0
 
 def greet_guest(name, greeting="Welcome"):
     return f"{greeting}, {name}"
 
 def check_guest(name, age):
-    name = greet_guest(name)
-    age = is_adult(age)
-    return f"{name}, {age}"
+    greeting = greet_guest(name)
+    if is_adult(age):
+        fee = get_entry_fee(age)
+        return f"{greeting}, {fee}"
+    return f"sorry, {name}. you must be 18 and above."
 
-print(check_guest("raven", 20))
+def process_line(guests):
+    for name, age in guests:
+        print(check_guest(name, age))
+    
+guests = [("raven", 20), ("lianne", 25), ("aaron", 15)]
+
+process_line(guests)
