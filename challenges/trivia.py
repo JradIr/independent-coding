@@ -11,3 +11,4 @@ for question, correct_answer in trivia.items():
         print("you got it wrong")
 
 print(score)
+print("complete the fifth green box")
