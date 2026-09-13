@@ -1,4 +1,5 @@
 shelf = {"Apple" : 5, "Orange" : 4, "Banana" : 3}
+cabinet = {"Drawer": 1, "Handle" : 2, "Clothes" : 3}
 
 def apply_discount(number):
     if number >= 15:
