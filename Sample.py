@@ -2,3 +2,6 @@ def sample(num):
     print(num)
 
 print(sample("5"))
+
+name = input("")
+print(name)
