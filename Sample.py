@@ -11,4 +11,14 @@ name = input("")
 print(name)
 
 #next is add a switch case code block
-print("switch case block")
+choice = input("Name a fruit: ")
+match choice:
+    case "mango":
+        print("you chose mango")
+    case "banana":
+        print("you chose banana")
+    case "apple":
+        print("you chose apple")
+    case _:
+        print("you didn't name a fruit...")
+
