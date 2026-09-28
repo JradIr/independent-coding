@@ -9,3 +9,6 @@ print(sample("19"))
 
 name = input("")
 print(name)
+
+#next is add a switch case code block
+print("switch case block")
