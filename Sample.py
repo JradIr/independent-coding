@@ -21,4 +21,5 @@ match choice:
         print("you chose apple")
     case _:
         print("you didn't name a fruit...")
+print(f"your choice is {choice} .")
 
