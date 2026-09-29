@@ -1,25 +1,41 @@
-def sample(num):
-    if num >= 18:
-        print("you are an adult")
+def check_age(age):
+    if age >= 18:
+        print("You are an adult.")
     else:
-        print(" you are a child")
-    print(num)
+        print("You are a child.")
+    return age
 
-number = sample("19")
+def get_fruit_choice():
+    choice = input("Name a fruit (mango, banana, or apple): ").strip().lower()
+    
+    match choice:
+        case "mango":
+            print("You chose mango.")
+        case "banana":
+            print("You chose banana.")
+        case "apple":
+            print("You chose apple.")
+        case _:
+            print("You didn't name a recognized fruit...")
+            choice = "nothing"
+            
+    return choice
 
-name = input("")
-print(name)
+def main():
+    name = input("What is your name? ").strip()
+    print(f"Hello, {name}!")
 
-#next is add a switch case code block
-choice = input("Name a fruit: ")
-match choice:
-    case "mango":
-        print("you chose mango")
-    case "banana":
-        print("you chose banana")
-    case "apple":
-        print("you chose apple")
-    case _:
-        print("you didn't name a fruit...")
-print(f"your choice is {choice}, and your age is {number}")
+    while True:
+        try:
+            user_age = int(input("Enter your age: "))
+            break
+        except ValueError:
+            print("Please enter a valid number.")
+            
+    age = check_age(user_age)
+    fruit = get_fruit_choice()
 
+    print(f"\nSummary: Your name is {name}, your age is {age}, and your choice is {fruit}.")
+
+if __name__ == "__main__":
+    main()
