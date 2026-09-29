@@ -5,7 +5,7 @@ def sample(num):
         print(" you are a child")
     print(num)
 
-print(sample("19"))
+number = sample("19")
 
 name = input("")
 print(name)
@@ -21,5 +21,5 @@ match choice:
         print("you chose apple")
     case _:
         print("you didn't name a fruit...")
-print(f"your choice is {choice} .")
+print(f"your choice is {choice}, and your age is {number}")
 
