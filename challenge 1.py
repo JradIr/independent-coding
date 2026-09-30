@@ -31,3 +31,5 @@ def is_balanced(s):
 print("refactor challenge1.py and added a function")
 print("challenge1")
 print("another statement")
+
+num_var = "this is a num variable"
