@@ -5,7 +5,7 @@ from datetime import datetime # for getting the current date and time
 import sys # sys module for exiting
 import os # might need this later for os.system commands
 import math # imported just in case we need math later
-
+# this is an added comment for github streak
 # GLOBAL VARIABLES
 global_deployment_status = "NOT_STARTED"
 admin_users_list = ["admin", "root", "sysadmin", "superuser"] # list of valid admins
