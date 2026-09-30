@@ -1,42 +1,46 @@
-def check_age(age):
-    if age >= 18:
-        print("You are an adult.")
+def check_access_level(level):
+    if level >= 3:
+        print("Access Granted: Administrator privileges active.")
     else:
-        print("You are a child.")
-    return age
+        print("Access Limited: Standard user privileges active.")
+    return level
 
-def get_fruit_choice():
-    choice = input("Name a fruit (mango, banana, or apple): ").strip().lower()
+def select_environment():
+    env = input("Target deployment environment (production, staging, or dev): ").strip().lower()
     
-    match choice:
-        case "mango":
-            print("You chose mango.")
-        case "banana":
-            print("You chose banana.")
-        case "apple":
-            print("You chose apple.")
+    match env:
+        case "production":
+            print("Connecting to Production Server (us-east-1)...")
+        case "staging":
+            print("Connecting to Staging Server (us-west-2)...")
+        case "dev":
+            print("Connecting to Local Development Cluster...")
         case _:
-            print("You didn't name a recognized fruit...")
-            choice = "nothing"
+            print("Error: Unrecognized environment. Defaulting to safe-mode...")
+            env = "safe-mode"
             
-    return choice
+    return env
 
 def main():
-    name = input("What is your name? ").strip()
-    print(f"Hello, {name}!")
+    sysadmin_name = input("Enter sysadmin username: ").strip()
+    print(f"Authentication initiated for user: {sysadmin_name}")
 
     while True:
         try:
-            user_age = int(input("Enter your age: "))
+            clearance = int(input("Enter security clearance level (1-5): "))
             break
         except ValueError:
-            print("Please enter a valid number.")
+            print("Invalid input: Clearance level must be a numeric value.")
             
-    age = check_age(user_age)
-    fruit = get_fruit_choice()
+    active_level = check_access_level(clearance)
+    target_env = select_environment()
 
-    print(f"\nSummary: Your name is {name}, your age is {age}, and your choice is {fruit}.")
+    print(f"\n--- Deployment Summary ---")
+    print(f"User: {sysadmin_name}")
+    print(f"Clearance Level: {active_level}")
+    print(f"Target Environment: {target_env}")
+    print("--------------------------")
 
 if __name__ == "__main__":
     main()
-print("done")
+print("Session terminated.")
