@@ -13,6 +13,7 @@ def fetch_users_from_api(url: str) -> list[dict]:
         return data
     except requests.exceptions.RequestException as e:
         logging.info(f"Fetch failed: {e}")
+        logging.info("try again")
         return []
 
 if __name__ == "__main__":
