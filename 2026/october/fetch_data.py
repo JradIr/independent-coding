@@ -25,5 +25,4 @@ if __name__ == "__main__":
         email = first_user.get("email")
 
         logging.info(f"User: {name}, Email: {email}")
-        logging.info("activity done")
         logging.info("sabi daw ni june malakas siya mag emel")
