@@ -25,4 +25,5 @@ if __name__ == "__main__":
         email = first_user.get("email")
 
         logging.info(f"User: {name}, Email: {email}")
-        logging.info("sabi daw ni june malakas siya mag emel")
+        logging.info("git commit -m oct013")
+    
