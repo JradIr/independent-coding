@@ -3,3 +3,9 @@ def get_num(n):
     return n
 
 print(get_num(10))
+
+def print_function() -> str:
+    return "this is a sentence from a ffunction."
+
+my_sentence = print_function()
+print(my_sentence)
