@@ -2,11 +2,8 @@ import asyncio
 import time
 from typing import Callable, Any, List
 
+#This is the asyncratelimiter class
 class AsyncRateLimiter:
-    """
-    Limits the execution of asynchronous tasks to a maximum number of concurrent workers
-    and enforces a minimum delay between task executions.
-    """
     def __init__(self, max_concurrent: int, rate_limit_delay: float):
         self.semaphore = asyncio.Semaphore(max_concurrent)
         self.rate_limit_delay = rate_limit_delay
@@ -28,7 +25,6 @@ class AsyncRateLimiter:
 
 
 async def mock_api_call(request_id: int, payload: str) -> dict:
-    """Simulates an asynchronous HTTP request or database operation."""
     print(f"[{time.strftime('%H:%M:%S')}] Starting Request {request_id} ('{payload}')...")
     await asyncio.sleep(0.5)  # Simulate I/O latency
     print(f"[{time.strftime('%H:%M:%S')}] Completed Request {request_id}")
@@ -36,7 +32,6 @@ async def mock_api_call(request_id: int, payload: str) -> dict:
 
 
 def get_user_inputs() -> tuple[int, float, List[str]]:
-    """Helper to safely prompt user for configuration parameters."""
     print("=== Async Rate Limiter Tester ===\n")
     
     while True:
