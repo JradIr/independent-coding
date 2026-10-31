@@ -197,12 +197,12 @@ def main():
     cool_loading_animation()
     
     # get user input
-    user_input_name = input("Enter sysadmin username: ")
+    user_input_name = input("Enter system admin username: ")
     
     # create the OOP object
     current_user = SystemAdministratorUserObject(user_input_name)
     
-    print("Authentication initiated for user: " + current_user.get_username())
+    print("Authenticated initiated for user: " + current_user.get_username())
 
     mfa_result = simulate_mfa()
     if mfa_result == False:
@@ -253,7 +253,7 @@ def main():
     print("\n--- Deployment Summary ---")
     print("Timestamp: " + str(datetime.now()))
     print("User: " + current_user.get_username())
-    print("Clearance Level: " + str(active_level))
+    print("level clearance: " + str(active_level))
     print("Target Environment: " + target_env + " (" + ip_address + ")")
     print("Final Status: " + global_deployment_status)
     print("--------------------------")
@@ -264,6 +264,6 @@ def main():
 # this makes sure it only runs if it's the main file
 if __name__ == "__main__":
     main()
-    print("\nSession terminated.")
+    print("\nSession ended.")
 
 print("this is an additional print statement")
