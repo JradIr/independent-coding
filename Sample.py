@@ -22,8 +22,8 @@ class SystemAdministratorUserObject:
     def get_username(self):
         return self.username
         
-    def set_username(self, new_name):
-        self.username = new_name
+    def set_username(self, updated_name):
+        self.username = updated_name
         
     def get_clearance_level(self):
         return self.clearance_level
