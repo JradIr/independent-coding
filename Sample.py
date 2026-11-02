@@ -46,7 +46,7 @@ def cool_loading_animation():
             print(f"Loading modules... {i}%")
             time.sleep(0.5)
     # print("DEBUG: done loading")
-    print("System Ready!\n")
+    print("The system is ready!")
 
 def simulate_mfa():
     # function to simulate multi factor authentication
