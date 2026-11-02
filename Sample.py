@@ -39,8 +39,7 @@ class SystemAdministratorUserObject:
 
 
 def cool_loading_animation():
-    # StackOverflow showed me how to do this progress bar
-    print("Initializing Enterprise Framework...")
+    print("Initializing the Enterprise Framework (please wait)...")
     for i in range(1, 101):
         if i % 20 == 0: # only print every 20 percent so it doesn't spam
             print(f"Loading modules... {i}%")
