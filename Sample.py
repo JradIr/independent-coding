@@ -39,7 +39,7 @@ class SystemAdministratorUserObject:
 
 
 def cool_loading_animation():
-    print("Initializing the Enterprises Framework (please wait)...")
+    print("Initialize the Enterprises Framework (please wait)...")
     for i in range(1, 101):
         if i % 20 == 0: # only print every 20 percent so it doesn't spam
             print(f"Loading modules... {i}%")
