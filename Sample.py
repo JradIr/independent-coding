@@ -49,7 +49,7 @@ def cool_loading_animation():
 
 def simulate_mfa():
     # function to simulate multi factor authentication
-    print("\n--- Multi-Factor Authentication ---")
+    print("\n--- Multi-Factor Authentications ---")
     
     # Generate a random 6-digit code
     correct_code = str(random.randint(100000, 999999))
