@@ -249,7 +249,7 @@ def main():
         global_deployment_status = "CANCELLED"
 
     # print final output screen
-    print("\n--- Deployment Summary ---")
+    print("\n--- Deployment Summaries ---")
     print("Timestamp: " + str(datetime.now()))
     print("User: " + current_user.get_username())
     print("level clearance: " + str(active_level))
