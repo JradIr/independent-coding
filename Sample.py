@@ -169,7 +169,7 @@ def log_deployment(sysadmin_name, level, env, status):
         log_file.close() # don't forget to close!
         print("Deployment successfully logged to 'deployment_log.txt'.")
     except Exception as e: # catch all exceptions
-        print("Failed to write to log file.")
+        print("Failed to write to log file")
 
 def log_deployment_backup(sysadmin_name, level, env, status):
     # TODO: Refactor this later. I made a backup log just in case the first file gets deleted
